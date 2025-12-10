@@ -1,0 +1,274 @@
+┌───────────────────────────────────────────────────────┐
+│                      description                      │
+├───────────────────────────────────────────────────────┤
+│ Query 1 – Parks in California with entrance fee < $35 │
+└───────────────────────────────────────────────────────┘
+┌───────────┬───────────────────────────────┬────────────┬──────────────┐
+│ park_code │             name              │ state_code │ entrance_fee │
+├───────────┼───────────────────────────────┼────────────┼──────────────┤
+│ lavo      │ Lassen Volcanic National Park │ CA         │ 30           │
+│ jotr      │ Joshua Tree National Park     │ CA         │ 30           │
+└───────────┴───────────────────────────────┴────────────┴──────────────┘
+┌──────────────────────────────────────────────┐
+│                 description                  │
+├──────────────────────────────────────────────┤
+│ Query 2 – Event count per park (year = 2025) │
+└──────────────────────────────────────────────┘
+┌───────────┬───────────────────────────────────────┬─────────────┐
+│ park_code │                 name                  │ event_count │
+├───────────┼───────────────────────────────────────┼─────────────┤
+│ seki      │ Sequoia & Kings Canyon National Parks │ 9           │
+│ yose      │ Yosemite National Park                │ 8           │
+│ grca      │ Grand Canyon National Park            │ 5           │
+│ jotr      │ Joshua Tree National Park             │ 5           │
+│ brca      │ Bryce Canyon National Park            │ 3           │
+│ zion      │ Zion National Park                    │ 1           │
+│ arch      │ Arches National Park                  │ 0           │
+│ lavo      │ Lassen Volcanic National Park         │ 0           │
+│ romo      │ Rocky Mountain National Park          │ 0           │
+│ yell      │ Yellowstone National Park             │ 0           │
+└───────────┴───────────────────────────────────────┴─────────────┘
+┌───────────────────────────────────────────────────────────┐
+│                        description                        │
+├───────────────────────────────────────────────────────────┤
+│ Query 3 – Parks with more events than the overall average │
+└───────────────────────────────────────────────────────────┘
+┌───────────┬───────────────────────────────────────┬─────────────┐
+│ park_code │                 name                  │ event_count │
+├───────────┼───────────────────────────────────────┼─────────────┤
+│ yose      │ Yosemite National Park                │ 10          │
+│ seki      │ Sequoia & Kings Canyon National Parks │ 9           │
+└───────────┴───────────────────────────────────────┴─────────────┘
+┌────────────────────────────────────────────────┐
+│                  description                   │
+├────────────────────────────────────────────────┤
+│ Query 4 – Top 5 parks by number of free events │
+└────────────────────────────────────────────────┘
+┌───────────┬───────────────────────────────────────┬──────────────────┐
+│ park_code │                 name                  │ free_event_count │
+├───────────┼───────────────────────────────────────┼──────────────────┤
+│ yose      │ Yosemite National Park                │ 10               │
+│ seki      │ Sequoia & Kings Canyon National Parks │ 9                │
+│ grca      │ Grand Canyon National Park            │ 5                │
+│ jotr      │ Joshua Tree National Park             │ 5                │
+│ brca      │ Bryce Canyon National Park            │ 4                │
+└───────────┴───────────────────────────────────────┴──────────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│                         description                          │
+├──────────────────────────────────────────────────────────────┤
+│ Query 5 – Events with park name and all visitor centers per  │
+│ park                                                         │
+└──────────────────────────────────────────────────────────────┘
+┌──────────┬──────────────────────────────────────────────────────────────┬───────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│ event_id │                         event_title                          │               park_name               │                         all_centers                          │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 29       │ 2025 Christmas Bird Count                                    │ Bryce Canyon National Park            │ Bryce Canyon Visitor Center                                  │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 27       │ Hoodoo Geology Talk                                          │ Bryce Canyon National Park            │ Bryce Canyon Visitor Center                                  │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 28       │ Plaza Ranger Talk                                            │ Bryce Canyon National Park            │ Bryce Canyon Visitor Center                                  │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 26       │ Veterans Day                                                 │ Bryce Canyon National Park            │ Bryce Canyon Visitor Center                                  │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 5        │ Astronomy Night | South Rim Village | Astronomy Program — Fo │ Grand Canyon National Park            │ Grand Canyon Visitor Center (South Rim), Verkamp's Visitor C │
+│          │ llowed by a Laser-guided Constellation Talk                  │                                       │ enter (South Rim)                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 2        │ Canyon Connections | Ranger Talk | Grand Canyon Visitor Cent │ Grand Canyon National Park            │ Grand Canyon Visitor Center (South Rim), Verkamp's Visitor C │
+│          │ er (free)                                                    │                                       │ enter (South Rim)                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 1        │ Fine Art Exhibition and Sale | South Rim Village - Kolb Stud │ Grand Canyon National Park            │ Grand Canyon Visitor Center (South Rim), Verkamp's Visitor C │
+│          │ io | Grand Canyon Celebration of Art 2025                    │                                       │ enter (South Rim)                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 3        │ Geology Talk | Ranger Talk | Yavapai Geology Museum (free)   │ Grand Canyon National Park            │ Grand Canyon Visitor Center (South Rim), Verkamp's Visitor C │
+│          │                                                              │                                       │ enter (South Rim)                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 4        │ Ranger Rendezvous | Ranger Program | Time and Location Vary  │ Grand Canyon National Park            │ Grand Canyon Visitor Center (South Rim), Verkamp's Visitor C │
+│          │ Daily (free)                                                 │                                       │ enter (South Rim)                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 30       │ Keys Ranch Tour                                              │ Joshua Tree National Park             │ Black Rock Nature Center, Cottonwood Visitor Center, Joshua  │
+│          │                                                              │                                       │ Tree National Park Visitor Center, Joshua Tree Visitor Cente │
+│          │                                                              │                                       │ r                                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 31       │ Keys Ranch Tour                                              │ Joshua Tree National Park             │ Black Rock Nature Center, Cottonwood Visitor Center, Joshua  │
+│          │                                                              │                                       │ Tree National Park Visitor Center, Joshua Tree Visitor Cente │
+│          │                                                              │                                       │ r                                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 33       │ Keys Ranch Tour                                              │ Joshua Tree National Park             │ Black Rock Nature Center, Cottonwood Visitor Center, Joshua  │
+│          │                                                              │                                       │ Tree National Park Visitor Center, Joshua Tree Visitor Cente │
+│          │                                                              │                                       │ r                                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 34       │ Keys Ranch Tour                                              │ Joshua Tree National Park             │ Black Rock Nature Center, Cottonwood Visitor Center, Joshua  │
+│          │                                                              │                                       │ Tree National Park Visitor Center, Joshua Tree Visitor Cente │
+│          │                                                              │                                       │ r                                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 32       │ Ranger Stroll                                                │ Joshua Tree National Park             │ Black Rock Nature Center, Cottonwood Visitor Center, Joshua  │
+│          │                                                              │                                       │ Tree National Park Visitor Center, Joshua Tree Visitor Cente │
+│          │                                                              │                                       │ r                                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 19       │ Ecology Walk (Sequoia)                                       │ Sequoia & Kings Canyon National Parks │ Cedar Grove Visitor Center, Foothills Visitor Center, Giant  │
+│          │                                                              │                                       │ Forest Museum, Kings Canyon Visitor Center, Lodgepole Visito │
+│          │                                                              │                                       │ r Center, Mineral King Ranger Station                        │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 17       │ Forest Feature Talk (Sequoia)                                │ Sequoia & Kings Canyon National Parks │ Cedar Grove Visitor Center, Foothills Visitor Center, Giant  │
+│          │                                                              │                                       │ Forest Museum, Kings Canyon Visitor Center, Lodgepole Visito │
+│          │                                                              │                                       │ r Center, Mineral King Ranger Station                        │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 24       │ Forest Feature Talk (Sequoia)                                │ Sequoia & Kings Canyon National Parks │ Cedar Grove Visitor Center, Foothills Visitor Center, Giant  │
+│          │                                                              │                                       │ Forest Museum, Kings Canyon Visitor Center, Lodgepole Visito │
+│          │                                                              │                                       │ r Center, Mineral King Ranger Station                        │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 18       │ General Sherman Talk (Sequoia)                               │ Sequoia & Kings Canyon National Parks │ Cedar Grove Visitor Center, Foothills Visitor Center, Giant  │
+│          │                                                              │                                       │ Forest Museum, Kings Canyon Visitor Center, Lodgepole Visito │
+│          │                                                              │                                       │ r Center, Mineral King Ranger Station                        │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 20       │ Giant Forest Meadow Walk (Sequoia)                           │ Sequoia & Kings Canyon National Parks │ Cedar Grove Visitor Center, Foothills Visitor Center, Giant  │
+│          │                                                              │                                       │ Forest Museum, Kings Canyon Visitor Center, Lodgepole Visito │
+│          │                                                              │                                       │ r Center, Mineral King Ranger Station                        │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 21       │ Grant Grove Ranger's Choice Talk (Kings Canyon)              │ Sequoia & Kings Canyon National Parks │ Cedar Grove Visitor Center, Foothills Visitor Center, Giant  │
+│          │                                                              │                                       │ Forest Museum, Kings Canyon Visitor Center, Lodgepole Visito │
+│          │                                                              │                                       │ r Center, Mineral King Ranger Station                        │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 22       │ Grant Tree Talk (Kings Canyon)                               │ Sequoia & Kings Canyon National Parks │ Cedar Grove Visitor Center, Foothills Visitor Center, Giant  │
+│          │                                                              │                                       │ Forest Museum, Kings Canyon Visitor Center, Lodgepole Visito │
+│          │                                                              │                                       │ r Center, Mineral King Ranger Station                        │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 23       │ Grant Tree Trail Walk (Kings Canyon)                         │ Sequoia & Kings Canyon National Parks │ Cedar Grove Visitor Center, Foothills Visitor Center, Giant  │
+│          │                                                              │                                       │ Forest Museum, Kings Canyon Visitor Center, Lodgepole Visito │
+│          │                                                              │                                       │ r Center, Mineral King Ranger Station                        │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 25       │ The Trek to the Nation's Christmas Tree - Kings Canyon       │ Sequoia & Kings Canyon National Parks │ Cedar Grove Visitor Center, Foothills Visitor Center, Giant  │
+│          │                                                              │                                       │ Forest Museum, Kings Canyon Visitor Center, Lodgepole Visito │
+│          │                                                              │                                       │ r Center, Mineral King Ranger Station                        │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 10       │ Discovery Walk (Yosemite Valley)                             │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │                                                              │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 13       │ Evening Programs (Yosemite Valley)                           │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │                                                              │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 6        │ Family Ranger Talk (Yosemite Valley)                         │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │                                                              │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 11       │ Guided Nature Walk (Yosemite Valley)                         │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │                                                              │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 7        │ Historic Ahwahnee Hotel Tour (Yosemite Valley)               │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │                                                              │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 8        │ In the Field: Creative Smartphone Photography (Yosemite Vall │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │ ey)                                                          │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 14       │ In the Field: Creative Smartphone Photography (Yosemite Vall │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │ ey)                                                          │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 15       │ In the Footsteps of Ansel Adams (Yosemite Valley)            │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │                                                              │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 9        │ The Ansel Adams Gallery Photography Walk (Yosemite Valley)   │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │                                                              │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 12       │ Yosemite After Dark (Yosemite Valley)                        │ Yosemite National Park                │ Big Oak Flat Information Station, Tuolumne Meadows Visitor C │
+│          │                                                              │                                       │ enter, Wawona Visitor Center at Hill's Studio, Yosemite Vall │
+│          │                                                              │                                       │ ey Welcome Center                                            │
+├──────────┼──────────────────────────────────────────────────────────────┼───────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ 16       │ Zion Canyon Visitor Center Ranger Program                    │ Zion National Park                    │ Human History Museum, Kolob Canyons Visitor Center, Zion Can │
+│          │                                                              │                                       │ yon Visitor Center                                           │
+└──────────┴──────────────────────────────────────────────────────────────┴───────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│                         description                          │
+├──────────────────────────────────────────────────────────────┤
+│ Query 6 – Parks with >= 1 visitor center AND >= 6 events (ye │
+│ ar = 2025)                                                   │
+└──────────────────────────────────────────────────────────────┘
+┌───────────┬───────────────────────────────────────┬──────────────────────┬─────────────┐
+│ park_code │                 name                  │ visitor_center_count │ event_count │
+├───────────┼───────────────────────────────────────┼──────────────────────┼─────────────┤
+│ seki      │ Sequoia & Kings Canyon National Parks │ 6                    │ 9           │
+│ yose      │ Yosemite National Park                │ 4                    │ 8           │
+└───────────┴───────────────────────────────────────┴──────────────────────┴─────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│                         description                          │
+├──────────────────────────────────────────────────────────────┤
+│ Query 7 – Example: Events in YOSE between 2025-01-01 and 202 │
+│ 5-12-31                                                      │
+└──────────────────────────────────────────────────────────────┘
+┌────┬──────────────────────────────────────────────────────────────┬────────────┬────────────┬─────────┐
+│ id │                         event_title                          │ start_date │  end_date  │ is_free │
+├────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┼─────────┤
+│ 8  │ In the Field: Creative Smartphone Photography (Yosemite Vall │ 2025-01-29 │ 2026-01-27 │ 1       │
+│    │ ey)                                                          │            │            │         │
+├────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┼─────────┤
+│ 9  │ The Ansel Adams Gallery Photography Walk (Yosemite Valley)   │ 2025-01-29 │ 2026-01-27 │ 1       │
+├────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┼─────────┤
+│ 10 │ Discovery Walk (Yosemite Valley)                             │ 2025-07-08 │ 2026-01-07 │ 1       │
+├────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┼─────────┤
+│ 11 │ Guided Nature Walk (Yosemite Valley)                         │ 2025-08-20 │ 2026-01-27 │ 1       │
+├────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┼─────────┤
+│ 12 │ Yosemite After Dark (Yosemite Valley)                        │ 2025-09-24 │ 2026-01-27 │ 1       │
+├────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┼─────────┤
+│ 13 │ Evening Programs (Yosemite Valley)                           │ 2025-11-01 │ 2026-01-27 │ 1       │
+├────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┼─────────┤
+│ 14 │ In the Field: Creative Smartphone Photography (Yosemite Vall │ 2025-11-26 │ 2026-01-27 │ 1       │
+│    │ ey)                                                          │            │            │         │
+├────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┼─────────┤
+│ 15 │ In the Footsteps of Ansel Adams (Yosemite Valley)            │ 2025-11-26 │ 2026-01-27 │ 1       │
+└────┴──────────────────────────────────────────────────────────────┴────────────┴────────────┴─────────┘
+┌──────────────────────────────────────────────────┐
+│                   description                    │
+├──────────────────────────────────────────────────┤
+│ Query 8 – Parks with no or limited events (<= 2) │
+└──────────────────────────────────────────────────┘
+┌───────────┬───────────────────────────────┬─────────────┐
+│ park_code │             name              │ event_count │
+├───────────┼───────────────────────────────┼─────────────┤
+│ arch      │ Arches National Park          │ 0           │
+│ lavo      │ Lassen Volcanic National Park │ 0           │
+│ romo      │ Rocky Mountain National Park  │ 0           │
+│ yell      │ Yellowstone National Park     │ 0           │
+│ zion      │ Zion National Park            │ 1           │
+└───────────┴───────────────────────────────┴─────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│                         description                          │
+├──────────────────────────────────────────────────────────────┤
+│ Query 9 – Example: Parks/events in AZ between 2025-12-01 and │
+│  2026-12-31                                                  │
+└──────────────────────────────────────────────────────────────┘
+┌────────────┬───────────┬────────────────────────────┬──────────────────────────────────────────────────────────────┬────────────┬────────────┐
+│ state_code │ park_code │         park_name          │                         event_title                          │ start_date │  end_date  │
+├────────────┼───────────┼────────────────────────────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┤
+│ AZ         │ grca      │ Grand Canyon National Park │ Canyon Connections | Ranger Talk | Grand Canyon Visitor Cent │ 2025-12-07 │ 2025-12-07 │
+│            │           │                            │ er (free)                                                    │            │            │
+├────────────┼───────────┼────────────────────────────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┤
+│ AZ         │ grca      │ Grand Canyon National Park │ Geology Talk | Ranger Talk | Yavapai Geology Museum (free)   │ 2025-12-07 │ 2025-12-07 │
+├────────────┼───────────┼────────────────────────────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┤
+│ AZ         │ grca      │ Grand Canyon National Park │ Ranger Rendezvous | Ranger Program | Time and Location Vary  │ 2025-12-07 │ 2025-12-07 │
+│            │           │                            │ Daily (free)                                                 │            │            │
+├────────────┼───────────┼────────────────────────────┼──────────────────────────────────────────────────────────────┼────────────┼────────────┤
+│ AZ         │ grca      │ Grand Canyon National Park │ Astronomy Night | South Rim Village | Astronomy Program — Fo │ 2025-12-09 │ 2025-12-09 │
+│            │           │                            │ llowed by a Laser-guided Constellation Talk                  │            │            │
+└────────────┴───────────┴────────────────────────────┴──────────────────────────────────────────────────────────────┴────────────┴────────────┘
+┌────────────────────────────────────────────────────────┐
+│                      description                       │
+├────────────────────────────────────────────────────────┤
+│ Query 10 – Parks with entrance fee between $30 and $40 │
+└────────────────────────────────────────────────────────┘
+┌───────────┬───────────────────────────────────────┬────────────┬──────────────┐
+│ park_code │                 name                  │ state_code │ entrance_fee │
+├───────────┼───────────────────────────────────────┼────────────┼──────────────┤
+│ grca      │ Grand Canyon National Park            │ AZ         │ 35           │
+│ yose      │ Yosemite National Park                │ CA         │ 35           │
+│ zion      │ Zion National Park                    │ UT         │ 35           │
+│ yell      │ Yellowstone National Park             │ ID         │ 35           │
+│ seki      │ Sequoia & Kings Canyon National Parks │ CA         │ 35           │
+│ brca      │ Bryce Canyon National Park            │ UT         │ 35           │
+└───────────┴───────────────────────────────────────┴────────────┴──────────────┘
